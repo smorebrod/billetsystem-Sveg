@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:BilletLibrary.BaseClassKøretøjer">
+            <summary>
+            Basse Klasse for køretøjer. Prop og metoder er protected.
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.BaseClassKøretøjer.#ctor(System.String)">
+            <summary>
+            Constructeren i basse klassen. (Nummerplade skrives som string)
+            </summary>
+            <param name="nummerplade"></param>
+        </member>
+        <member name="P:BilletLibrary.BaseClassKøretøjer.NummerPlade">
+            <summary>
+            Nummerplade prop med en get og set, nummerplade må ikke være på mere en 7 tegn.
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.BaseClassKøretøjer.Date">
+            <summary>
+            DateTIme har en get og set.
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.BaseClassKøretøjer.Pris">
+            <summary>
+            metode for pris, er abstract så skal overrides i MC og Bil.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.BaseClassKøretøjer.Køretøj">
+            <summary>
+            metode for køretøjer, er abstract så skal overrides i MC og Bil.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.BaseClassKøretøjer.Brobizz">
+            <summary>
+            Metode for brobizz, er abstract så skal overrides i MC og Bil.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletLibrary.Bil">
+            <summary>
+            Klassen bil arver fra BaseClassKøretøjer
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Bil.#ctor(System.String)">
+            <summary>
+            Contructeren, nummerplade arver fra base(nummerplader)
+            </summary>
+            <param name="nummerplade"></param>
+        </member>
+        <member name="M:BilletLibrary.Bil.Pris">
+            <summary>
+            Metode for pris, skal overrides.
+            </summary>
+            <returns> Pris </returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.Køretøj">
+            <summary>
+            Metode for køretøjer, skal overrides
+            </summary>
+            <returns> Køretøjs form </returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.Brobizz">
+            <summary>
+            Metode for brobizz, skal overrides
+            </summary>
+            <returns> brobizz rabat </returns>
+        </member>
+        <member name="T:BilletLibrary.MC">
+            <summary>
+            Klassen MC arver fra BaseClassKøretøjer
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.MC.#ctor(System.String)">
+            <summary>
+            Contructeren, nummerplade arver fra base(nummerplader)
+            </summary>
+            <param name="nummerplade"></param>
+        </member>
+        <member name="M:BilletLibrary.MC.Pris">
+            <summary>
+            Metode for pris, skal overrides.
+            </summary>
+            <returns> Pris </returns>
+        </member>
+        <member name="M:BilletLibrary.MC.Køretøj">
+            <summary>
+            Metode for køretøjer, skal overrides
+            </summary>
+            <returns> Køretøjs form </returns>
+        </member>
+        <member name="M:BilletLibrary.MC.Brobizz">
+            <summary>
+            Metode for brobizz, skal overrides
+            </summary>
+            <returns> brobizz rabat </returns>
+        </member>
+    </members>
+</doc>

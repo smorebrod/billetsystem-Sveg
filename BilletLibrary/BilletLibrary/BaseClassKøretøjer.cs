@@ -27,7 +27,7 @@ namespace BilletLibrary
             {
                 if (NummerPlade.Length > 7)
                 {
-                    throw new Exception();
+                    throw new Exception("Der kan ikke være mere end 7 tegn i nummerplade");
                 }
             }
         }

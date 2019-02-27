@@ -43,5 +43,26 @@ namespace BilletLibrary
             var Result = 240 * 0.95;
             return Result;
         }
+
+        /// <summary>
+        /// Opgave 9, flyttet ind i det her projekt.
+        /// Storbælt brobizz med weekend rabat
+        /// </summary>
+        /// <param name="day"></param>
+        /// <returns></returns>
+        public double WeekendsRabat(DateTime day)
+        {
+
+            var result2 = 240 * 0.95;
+            var result = 240 * 0.80;
+            if (day.DayOfWeek == DayOfWeek.Saturday || day.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return result;
+            }
+            else
+            {
+                return result2;
+            }
+        }
     }
 }
